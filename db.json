@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "title": "Plant vs Undead",
+    "description": "En esta guía encontrarás lo necesario para empezar en Plant vs Undead",
+    "image": "/assets/webp/plant-vs-undead.webp"
+  },
+  {
+    "id": "2",
+    "title": "Rentabilidad",
+    "description": "En este apartado hablaremos de número reales y comprobados por nuestra comunidad",
+    "image": "/assets/webp/pvu-token.webp"
+  },
+  {
+    "id": "3",
+    "title": "Extracciones",
+    "description": "En este artículo podrán leer sobre diferentes estrategias para extraer dinero",
+    "image": "/assets/webp/extraccion-de-dinero.webp"
+  }
+]

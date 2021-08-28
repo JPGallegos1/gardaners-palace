@@ -3,20 +3,26 @@ import { Container, VStack } from "@chakra-ui/react";
 import Footer from "./Footer";
 import Header from "./Header";
 
-export interface LayoutProps {}
+export interface ILayout {}
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC<ILayout> = ({ children }) => {
   return (
     <>
       <Head>
         <title>Home</title>
       </Head>
-      <Header />
+      <Header title="The Gardaners Palace" />
       <VStack
         as="main"
         width="100%"
         height="100%"
-        maxWidth="container.lg"
+        maxWidth={{
+          base: "full",
+          sm: "full",
+          md: "container.md",
+          lg: "container.lg",
+          xl: "container.xl",
+        }}
         minH="100vh"
         margin="0 auto"
       >

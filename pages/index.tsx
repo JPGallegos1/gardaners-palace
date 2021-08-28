@@ -1,11 +1,12 @@
-import { Box } from "@chakra-ui/react";
 import type { NextPage } from "next";
+import Card from "../components/Card";
 import Layout from "../components/Layout";
+import data from "../db.json";
 
 const Home: NextPage = () => {
   return (
     <Layout>
-      <Box color="gp.red.100">Main content here</Box>
+      <Card data={data} />
     </Layout>
   );
 };

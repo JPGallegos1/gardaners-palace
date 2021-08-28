@@ -8,7 +8,13 @@ const Footer: React.FC<FooterProps> = () => {
       as="footer"
       width="100%"
       height="8rem"
-      maxWidth="container.lg"
+      maxWidth={{
+        base: "full",
+        sm: "full",
+        md: "container.md",
+        lg: "container.lg",
+        xl: "container.xl",
+      }}
       margin="0 auto"
     >
       <Heading as="h2">Footer</Heading>

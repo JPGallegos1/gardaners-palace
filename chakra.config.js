@@ -6,7 +6,7 @@ export const theme = extendTheme({
       "html, body": {
         background: useColorModeValue("light.background", "dark.background"),
         fontSize: "16px",
-      },
+      }
     }),
   },
   colors: {

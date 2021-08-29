@@ -9,12 +9,12 @@
     "id": "2",
     "title": "Rentabilidad",
     "description": "En este apartado hablaremos de número reales y comprobados por nuestra comunidad",
-    "image": "/assets/webp/pvu-token.webp"
+    "image": "/assets/svg/rentability.svg"
   },
   {
     "id": "3",
     "title": "Extracciones",
     "description": "En este artículo podrán leer sobre diferentes estrategias para extraer dinero",
-    "image": "/assets/webp/extraccion-de-dinero.webp"
+    "image": "/assets/svg/extraction.svg"
   }
 ]

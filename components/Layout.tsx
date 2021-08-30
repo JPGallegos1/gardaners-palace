@@ -11,6 +11,7 @@ const Layout: React.FC<ILayout> = ({ children }) => {
       <Head>
         <title>Home</title>
       </Head>
+
       <Header title="Twitter's Gardaners Palace" />
       <VStack
         as="main"

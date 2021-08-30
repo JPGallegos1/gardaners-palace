@@ -1,15 +1,41 @@
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme, useColorModeValue } from "@chakra-ui/react";
 
 export const theme = extendTheme({
   styles: {
     global: (props) => ({
       "html, body": {
-        background: "gp.white.100",
+        background: useColorModeValue("light.background", "dark.background"),
         fontSize: "16px",
-      },
+      }
     }),
   },
   colors: {
+    dark: {
+      background: "#16161a",
+      primary: "#7f5af0",
+      secondary: "#2cb67d",
+
+      // Backgrounds
+      primaryBackground: "#16161a",
+      secondaryBackground: "#242629",
+      
+      // Texts
+      primaryText: "#fffffe",
+      secondaryText: "#94a1b2"
+    },
+    light: {
+      background: "#f8f5f2",
+      primary: "#7f5af0",
+      secondary: "#078080",
+
+      // Backgrounds
+      primaryBackground: "#f8f5f2",
+      secondaryBackground: "#fffffe",
+      
+      // Texts
+      primaryText: "#232323",
+      secondaryText: "#222525"
+    },
     gp: {
       white: {
         100: "#EFEFF2",

@@ -3,6 +3,9 @@ import {
   HStack,
   keyframes,
   usePrefersReducedMotion,
+  Button,
+  useColorMode,
+  useColorModeValue,
 } from "@chakra-ui/react";
 
 export interface IHeader {
@@ -10,6 +13,7 @@ export interface IHeader {
 }
 
 const Header: React.FC<IHeader> = ({ title }) => {
+  const { colorMode, toggleColorMode } = useColorMode()
   const blink = keyframes`
 			0% {
 				width: 0;
@@ -42,7 +46,6 @@ const Header: React.FC<IHeader> = ({ title }) => {
     <HStack
       as="header"
       width="100%"
-      height="12rem"
       maxWidth={{
         base: "full",
         sm: "full",
@@ -51,9 +54,16 @@ const Header: React.FC<IHeader> = ({ title }) => {
         xl: "container.xl",
       }}
       margin="0 auto"
+      display="flex-column"
+      textAlign="center"
+      padding="2rem 0"
     >
       <Heading
         as="h1"
+        width="100%"
+        textAlign={{ base: "center", sm: "center", md: "center" }}
+        fontSize={[24, 36, 48, 60]}
+        paddingBottom="0.5rem"
         color="gp.green.300"
         width={{ base: "full", sm: "full" }}
         fontSize="3em"
@@ -68,6 +78,9 @@ const Header: React.FC<IHeader> = ({ title }) => {
       >
         {title}
       </Heading>
+      <Button onClick={toggleColorMode} color={useColorModeValue("dark.primaryText", "dark.primaryText")} bg={useColorModeValue("light.primary", "dark.primary")} variant="solid">
+        {colorMode === "light" ? "Dark" : "Light"} Mode
+      </Button>
     </HStack>
   );
 };
